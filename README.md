@@ -1,6 +1,6 @@
-# Wellum - Hệ Thống Quản Lý Tin Tức
+# Wellum - Hệ Thống Quản Lý BLog 
 
-Dự án Assignment môn Java 3 - Xây dựng website tin tức sử dụng Java Servlet và JSP.
+Dự án Assignment môn Java Servlet - Xây dựng website sử dụng Java Servlet và JSP.
 
 ## 🚀 Công Nghệ Sử Dụng
 - **Ngôn ngữ:** Java 17+
