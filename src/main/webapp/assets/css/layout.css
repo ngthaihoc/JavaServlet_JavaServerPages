@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+:root {
+    --bg-dark: #121212;
+    --nav-bg: #1a1a1a;
+    --accent: #48bb78;
+    --text-muted: #ffffff;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Bootstrap Overrides */
+    --bs-navbar-brand-color: #ffffff !important;
+    --bs-navbar-brand-hover-color: #ffffff !important;
+    --bs-navbar-color: #ffffff !important;
+    --bs-navbar-hover-color: #ffffff !important;
+    --bs-nav-link-color: #ffffff !important;
+    --bs-nav-link-hover-color: #48bb78 !important;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+#layoutNavbar {
+    background-color: var(--nav-bg) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+    color: #ffffff !important;
+    --bs-navbar-color: #ffffff !important;
+    --bs-navbar-hover-color: #ffffff !important;
+    --bs-navbar-brand-color: #ffffff !important;
+    --bs-navbar-brand-hover-color: #ffffff !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    font-weight: 800;
+    --bs-navbar-brand-color: #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.btn {
+    white-space: nowrap !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    padding: 0.5rem 0.8rem !important;
+    white-space: nowrap !important;
+    transition: var(--transition);
+    opacity: 1 !important;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+    transform: translateY(-1px);
+}
+
+.dropdown-menu {
+    background-color: #262626;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-top: 15px !important;
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--accent) !important;
+    padding-left: 1.25rem;
+}
+
+.form-control:focus {
+    background-color: #2d2d2d !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 0.25rem rgba(72, 187, 120, 0.1) !important;
+}
+
+.btn-outline-success {
+    border-color: var(--accent);
+    color: var(--accent);
+    border-width: 2px;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.crud-form-group input[type="text"],
+.crud-form-group input[type="email"],
+.crud-form-group input[type="date"],
+.crud-form-group textarea,
+.crud-form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #333333 !important;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.text-mutedSmall {
+    font-size: 1rem;
+    color: #ffffff !important;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #0d0d0d;
+    border-top: 4px solid var(--accent);
+    color: #ffffff !important;
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p,
+footer address {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+footer a {
+    transition: var(--transition);
+    font-weight: 700;
+    color: #4db8ff !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent) !important;
+    text-decoration: underline !important;
+}
+
+main {
+    min-height: 80vh;
+    padding: 60px 0;
+}
+
+.fw-heavy {
+    font-weight: 800 !important;
+}
+
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.writeContainer {
+    width: 90%;
+    margin: 40px auto; /* Thêm khoảng cách trên dưới */
+    padding: 0 15px; /* Thêm padding hai bên cho an toàn trên màn hình nhỏ */
+}
+#writeTitle{
+	width: 100%
+}
+
+
+#writeContentTextarea {
+    min-height: 50vh; /* Chiều cao tối thiểu bằng 50% chiều cao màn hình */
+    resize: vertical; /* Cho phép người dùng thay đổi chiều cao */
+    width: 100%
+}
+.writeButtonGroup{
+	padding: 50px;
+}
+
+.writeBtnSave {
+    background-color: #3498db; /* Blue */
+}
+
+.writeBtnNext {
+    background-color: #2ecc71; /* Green */
+}
